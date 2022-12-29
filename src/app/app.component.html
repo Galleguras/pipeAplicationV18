@@ -1,19 +1,4 @@
 <div class="text-layout">
-  <h1>{{ nombre | titlecase }}</h1>
-  <h1>{{ valor | currency : "EUR" }}</h1>
-  <h2>{{ obj | json }}</h2>
+  <app-menu></app-menu>
+  <router-outlet></router-outlet>
 </div>
-
-<button
-  icon="pi pi-check"
-  iconPos="left"
-  pButton
-  type="button"
-  label="Click"
-  class="p-button-help"
-  (click)="mostrarNombre()"
->
-  Cambiar Nombre
-</button>
-
-<app-menu></app-menu>
