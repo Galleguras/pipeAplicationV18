@@ -1,4 +1,19 @@
-<h1>{{ nombre | titlecase }}</h1>
-<h1>{{ valor | currency : "EUR" }}</h1>
-<h2>{{ obj | json }}</h2>
-<button (click)="mostrarNombre()">Cambiar Nombre</button>
+<div class="text-layout">
+  <h1>{{ nombre | titlecase }}</h1>
+  <h1>{{ valor | currency : "EUR" }}</h1>
+  <h2>{{ obj | json }}</h2>
+</div>
+<p-card [header]="nombre | titlecase" subheader="subheader">
+  sadf asd f sad f asd f as d f sda gf asd f sda f a sd f
+</p-card>
+<button
+  icon="pi pi-check"
+  iconPos="left"
+  pButton
+  type="button"
+  label="Click"
+  class="p-button-help"
+  (click)="mostrarNombre()"
+>
+  Cambiar Nombre
+</button>
