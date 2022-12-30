@@ -8,4 +8,14 @@
       ventasNetas | number : "1.2-2"
     }}</p-card>
   </div>
+  <div class="col-4">
+    <p-card header="Ventas Brutas" subheader="del presente año">{{
+      ventasNetas + 4000000000 | currency : "EUR"
+    }}</p-card>
+  </div>
+  <div class="col-4">
+    <p-card header="Ganancia %" subheader="del presente año">{{
+      porcentaje | percent : "4.2-2"
+    }}</p-card>
+  </div>
 </div>
