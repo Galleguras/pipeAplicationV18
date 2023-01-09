@@ -51,4 +51,18 @@
       </ul>
     </p-fieldset>
   </div>
+  <div class="col-12 md:col-6 lg:col-3">
+    <p-fieldset legend="JSON Pipe" [toggleable]="true">
+      {{ personas | json }}
+    </p-fieldset>
+  </div>
+
+  <div class="col-12 md:col-6 lg:col-3">
+    <p-fieldset legend="JSON Pipe" [toggleable]="true">
+      <pre>      {{ miObservable | async }}</pre>
+      <pre>      {{ valorPromesa | async }}</pre>
+
+      <!--       {{ "hola" | async }} -->
+    </p-fieldset>
+  </div>
 </div>

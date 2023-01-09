@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { interval } from 'rxjs';
 @Component({
   selector: 'app-no-comunes',
   templateUrl: './no-comunes.component.html',
@@ -30,4 +30,15 @@ export class NoComunesComponent {
 
   //KEYVALUEPIPE
   personas = { nombre: 'Fernando', edad: 35, direccion: 'Otawa, Canadá' };
+
+  //Async Pipe
+  miObservable = interval(1000);
+
+  valorPromesa = new Promise((resolve, reject) => {
+    setTimeout(() => resolve('tenemos datos'), 3000);
+  });
+
+  /*   constructor() {
+    this.miObservable.subscribe(console.log);
+  } */
 }
