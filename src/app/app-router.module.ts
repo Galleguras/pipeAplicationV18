@@ -7,7 +7,7 @@ import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', component: BasicosComponent, pathMatch: 'full' },
+  { path: 'texto', component: BasicosComponent, pathMatch: 'full' },
   { path: 'numeros', component: NumerosComponent },
   { path: 'no-comunes', component: NoComunesComponent },
   { path: 'ordenar', component: OrdenarComponent },

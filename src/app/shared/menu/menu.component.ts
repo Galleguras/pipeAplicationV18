@@ -17,7 +17,7 @@ export class MenuComponent implements OnInit {
           {
             label: 'Textos y Fechas',
             icon: 'pi pi-align-left',
-            routerLink: '',
+            routerLink: 'texto',
           },
           {
             label: 'Números',
@@ -34,23 +34,6 @@ export class MenuComponent implements OnInit {
       {
         label: 'Pipes de Personalizados',
         icon: 'pi pi-cog',
-        items: [
-          {
-            label: 'Textos y Fechas',
-            icon: 'pi pi-align-left',
-            routerLink: '',
-          },
-          {
-            label: 'Números',
-            icon: 'pi pi-dollar',
-            routerLink: 'numeros',
-          },
-          {
-            label: 'No comunes',
-            icon: 'pi pi-globe',
-            routerLink: 'no-comunes',
-          },
-        ],
       },
     ];
   }
