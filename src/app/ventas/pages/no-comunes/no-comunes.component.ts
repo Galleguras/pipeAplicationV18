@@ -27,4 +27,7 @@ export class NoComunesComponent {
   borrarPersona() {
     this.clientes.pop();
   }
+
+  //KEYVALUEPIPE
+  personas = { nombre: 'Fernando', edad: 35, direccion: 'Otawa, Canadá' };
 }
