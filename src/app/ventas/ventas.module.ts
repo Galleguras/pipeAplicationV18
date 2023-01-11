@@ -1,3 +1,4 @@
+import { VuelaPipes } from './pipes/vuela.pipes';
 import { PrimeNgModule } from './../prime-ng/prime-ng.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -6,6 +7,8 @@ import { NoComunesComponent } from './pages/no-comunes/no-comunes.component';
 import { BasicosComponent } from './pages/basicos/basicos.component';
 import { OrdenarComponent } from './pages/ordenar/ordenar.component';
 import { MayusculasPipes } from './pipes/mayusculas.pipes';
+import { OrdenarPipe } from './pipes/ordenar.pipe';
+
 @NgModule({
   declarations: [
     NumerosComponent,
@@ -13,6 +16,8 @@ import { MayusculasPipes } from './pipes/mayusculas.pipes';
     BasicosComponent,
     OrdenarComponent,
     MayusculasPipes,
+    VuelaPipes,
+    OrdenarPipe,
   ],
   exports: [
     NumerosComponent,
